@@ -150,7 +150,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSURLSessionDataTask *)GET:(NSString *)URLString
                    parameters:(nullable id)parameters
                       success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                      failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure;
+                      failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure DEPRECATED_ATTRIBUTE;
 
 
 /**
@@ -198,7 +198,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
                     parameters:(nullable id)parameters
                        success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                       failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure;
+                       failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure DEPRECATED_ATTRIBUTE;
 
 /**
  Creates and runs an `NSURLSessionDataTask` with a `POST` request.
@@ -232,7 +232,7 @@ NS_ASSUME_NONNULL_BEGIN
                     parameters:(nullable id)parameters
      constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
                        success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                       failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure;
+                       failure:(nullable void (^)(NSURLSessionDataTask * __nullable task, NSError *error))failure DEPRECATED_ATTRIBUTE;
 
 /**
  Creates and runs an `NSURLSessionDataTask` with a multipart `POST` request.
