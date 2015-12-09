@@ -6,22 +6,21 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
   - FASTLANE_LANE=ci_commit
-  - DEFAULT_XCODE_VERSION=xcode7.1
 matrix:
   include:
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_LANE=code_coverage FASTLANE_ENV=default
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=ios82
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=ios83
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=ios84
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=ios91
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=osx
-    - osx_image: $DEFAULT_XCODE_VERSION
+    - osx_image: xcode7.1
       env: FASTLANE_ENV=tvos90
     - osx_image: xcode7
       env: FASTLANE_ENV=ios81_xcode7	  
