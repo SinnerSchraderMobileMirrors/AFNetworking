@@ -33,6 +33,8 @@ script:
   - defaults write com.apple.dt.xcodebuild DVTDefaultLogLevel -int 3
   - defaults write com.apple.dt.xcodebuild DVTFilePathLogLevel -int 0
   - defaults write com.apple.dt.xcodebuild DependenciesLogLevel -int 0
+  - defaults write com.apple.dt.xcodebuild IDEKVOLogLevel -int 0
+  - defaults write com.apple.dt.xcodebuild DVTMacroExpansionParsingLogLevel -int 0
   - fastlane $FASTLANE_LANE configuration:Debug --env $FASTLANE_ENV
   - fastlane $FASTLANE_LANE configuration:Release --env $FASTLANE_ENV
 after_success:
